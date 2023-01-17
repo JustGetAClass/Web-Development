@@ -32,11 +32,11 @@ p {
 }
 /* Sections */
 .colored-section {
-    background-color: #ff4c68;
+	background-color: #ff4c68;
 	color: #ffffff;
 }
 .white-section {
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
 /* Navigation Bar */
 .navbar {
@@ -64,8 +64,8 @@ p {
 }
 /* Title section */
 #title .container-fluid {
-    text-align: left;
-    padding: 3% 15% 8.4%;
+	text-align: left;
+	padding: 3% 15% 8.4%;
 }
 .title-image {
 	width: 60%;
