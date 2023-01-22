@@ -1,0 +1,626 @@
+// numbers
+
+// Addition
+50 + 5 //55
+
+// Subtraction
+90 - 1 //89
+
+// Multiplication
+5 * 5 //25
+
+// Division
+400 / 25 //16
+
+//Modulo
+27 % 2 //1 finds if a number is odd or even how many times does 2 go into 27 whatever the remainder is this is used to find the remainder
+
+// Squared
+3 ** 2 //9 this is 3 to the 2nd power
+
+// NaN stands for not a number but it still has a numerical value
+
+Math.floor(43.999999); //rounds down to 43
+Math.ceil(43.11111); //rounds up to 44
+Math.random(); //will "randomly" produce a number between 0 and 1 with long decimal places
+
+// to floor a random number
+const step1 = math.random();
+
+const step2 = step1 * 10;
+
+const step3 = math.floor(step2);
+
+const step4 = step3 + 1;
+
+Math.floor(Math.random() * 10) + 1; //short hand! + 1 removes 1 this would do a random number between 1-10
+
+const die1 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+const die2 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
+let roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}` // new way of concactonating rather than the old long winded way
+
+
+
+
+
+
+
+// Conditional statements
+//these are used for the branches of decisions!
+let rating = 3;
+if (rating === 3) {
+    console.log("you are a superstar"); // this would display the message only if the rating is the same as the value!!
+}
+
+
+
+
+//logical operators - allow us to combine different expressions together!
+// &&      / and will combine an expression on the left and an expression on the right
+// || // shift + \      / or
+// !        / or not
+
+
+
+
+
+
+
+
+// console.log("its working"); // this is to create a console log to make sure that everything is connected properly!
+
+// let rating = 3; // setting the value of rating to 3
+
+// if (rating === 3) { //if rating is equal to 3
+//     console.log("you are a superstar!"); // {then} console log msg
+// }
+
+
+
+
+/////////////////////////////////////////////////////////////////
+
+
+
+
+// let random = Math.random(); // random will now have a random number value
+
+// if (random < 0.5) { // random number less than 0.5?
+//     console.log("less than") // display this
+//     console.log(random);
+// } else { // if not less than
+//     console.log("greater than"); // display this
+// }
+
+
+
+
+// /////////////////////////////////////////////////////////////
+
+
+
+// // different if and else if
+// const dayOfWeek = 'Saturday';
+
+// if (dayOfWeek === 'Monday') {
+//     console.log("Uggggh I hate Mondays!!!")
+// } else if (dayOfWeek === 'Saturday') {
+//     console.log("yay I love Saturdays!!!")
+// }
+
+
+
+
+// ////////////////////////////////////////////////////////////
+
+
+
+// // if / else if / else if / else
+// let age = prompt();
+
+// if (age < 5) {
+//     alert("you are a toddler you get in for free!")
+// } else if (age < 10) {
+//     alert("you are a child and pay $5")
+// } else if (age < 65) {
+//     alert("you are an adult and have to pay full price $15")
+// } else if (age > 65, 100) {
+//     alert("you are a senior and receive a discount of $5")
+// }
+
+
+// // because these a tiered I don't need to range each one as it will run the first true statement!!
+
+
+
+// /////////////////////////////////////////////////////////////
+
+
+
+
+// let dayOWeek = prompt('').toLowerCase; //if taking user input and checking make sure to case their input so the answer can match!!
+
+// if (dayOWeek === 'monday') {
+//     console.log("Uggggh I hate Mondays!!!")
+// } else if (dayOWeek === 'saturday') {
+//     console.log("yay I love Saturdays!!!")
+// } else {
+//     console.log("please reload")
+// }
+// // else will run if user writes anything other than the two options provided
+
+
+
+
+
+
+
+
+// // asking a user for a password that cannot contain spaces and must be = to or > 6 characters
+// const password = prompt("please enter a new password");
+
+// // checks the length of password must be = or > 6
+// if (password.length >= 6) {
+//     console.log("long enough password")
+// } else {
+//     console.log("passwword too short")
+// }
+// // checks for spaces in password
+// if (password.indexOf(' ') === -1) {
+//     console.log('good job! no space')
+// } else {
+//     console.log('please no spaces!')
+// }
+
+
+
+
+
+
+
+
+// logical operators
+// the 2 && symbols combine the above password into one line
+// const password = prompt('Enter your password');
+
+// if (password.length >= 6 && password.indexOf(' ') === -1) {
+//     console.log('Valid Password');
+// } else {
+//     console.log('please try again')
+// }
+// the 2 || symbols ask for one or the other
+// const password = prompt('Enter your password');
+
+// if (password.length >= 6 || password.indexOf(' ') === -1) {
+//     console.log('Valid Password');
+// } else {
+//     console.log('please try again')
+// }
+
+// the ! symbol negates an input below if nothing is typed it will ask to try again
+// let firstName = prompt('Enter your first name'); //user enters name
+
+// if (!firstName) { // ! = not so if there was not a firstName
+//     firstName = prompt('Try again'); // prompt will display again!
+// }
+
+
+
+
+
+
+
+
+// Arrays [] - this is a collection of data - such as a collection of variables
+
+// Array Methods
+// Push - add to the end of an array
+// Pop - remove from the end of an array
+// Shift - remove from the start of the arrau
+// unshift - add to the start of an array
+
+// .concat() can combine arrays (temporarily) if the was2 arrays 1 cats 1 dogs you could do cats.concat(dogs) this would display both together you can apply a value to this as well let catdog = cats.concat(dogs);
+// .reverse() will switch the order of an array end to start start to end
+// .includes() check if an item is in an array / will reply true or false
+// .indexOf() can tell us if something is in an array and its location
+
+// .slice() cut out a section of an array start and end digits can be placed
+// .splice() helps insert things in to an area of an array
+
+// .sort() helps sort an array be careful with sorting! Should be used in conjuction with function
+
+
+
+
+
+
+
+
+// Objects - storing of data in key pairs!
+
+// const fitBitData {
+//     totalSteps: 308727,
+//     totalMiles: 211.7,
+//     avgCalorieBurn: 5755,
+//     workOutsThisWeek: '5 of 7',
+// };
+// this is what an object would look like
+
+// Object Literal {} - Key Value pair
+// const person = {firstName: 'Mick', lastName: 'Jagger'}
+//only time you use {} is when you create an object!
+// to access data use person["firstName"] or person.firstName
+
+
+
+
+
+
+
+
+// Loops
+// for loop
+for (let i = 1; i <= 10; i++) { // creates a variable i (temporary) that is = 1 the next line say if the value 1 is < or = 10 then keep adding 1 (1++)
+    console.log(i);
+}
+// even number count only
+for (let i = 0; i <= 20; i += 2) { // creates a variable i (temporary) that is = 1 the next line say if the value 1 is < or = 10 then keep adding 1 (1++)
+    console.log(i);
+} // this will count 2 at a time in even integers to 20
+// to count in odd numbers
+for (let i = 1; i <= 21; i += 2) { // creates a variable i (temporary) that is = 1 the next line say if the value 1 is < or = 10 then keep adding 1 (1++)
+    console.log(i);
+} // this will count by 2 at a time! up to 21
+// counting down
+for (let i = 100; i >= 0; i -= 1) {
+    console.log(i);
+} // this will count down from 100 in decrements of 1
+// multiplication by 10 to 1000
+for (let i = 10; i <= 1000; i *= 10) {
+    console.log(i);
+}
+// subtracting 5 from 25 - 0
+for (let i = 25; i >= 0; i -= 5) {
+    console.log(i);
+}
+
+
+
+// loop to run an index array!
+const animals = ["aardvark", "aardwolf", "african elephant", "african tree pangolin"]
+
+for (let i = 0; i < animals.length; i++) {
+    console.log(i, animals[i]);
+} //this will run the entire list of animals, in the animals variable it will also display their position in the list.
+
+
+
+
+
+// while loop
+let count = 0; //count is equal to 0 (start point)
+while (count < 10) { // whilst 0 is less than 10
+    count++; // count increment
+    console.log(count) // log the count till number is equal to 10
+}
+// this while loop is the equivilent of this for loop
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// basic example / while loop for " password "
+const secret = "BabyHippo";
+
+let guess = prompt("enter the secret code...")
+while (guess !== secret) { // prompt displays if not true !==
+    guess = prompt("enter the secret code...");
+}
+console.log("congrats you got the secret!!!")
+
+// small game using while loop
+let input = prompt("Hey, say something!")
+while (true) {
+    input = prompt(input);
+    if (input === "stop copying me") {
+        break; // this will stop the process if input is exactly = to the above phrase stop copying me
+    }
+}
+console.log("OK you, win....!")
+
+
+
+
+
+
+
+
+// parseInt check and convert a number in a string!
+let maximum = parseInt(prompt("enter the maximum number!"));
+
+
+
+
+
+
+// Small game pick a number game
+let maximum = parseInt(prompt("Enter the maximum Number")); //user enter a maximum number
+while (!maximum) {
+    maximum = parseInt(prompt("Enter the maximum Number")); // parseInt will check a string for numerical values
+}
+// the above indicates the user entering a high numerical value and will loop until this action is completed
+const targetNum = Math.floor(Math.random() * maximum) + 1 // creates a random integer
+console.log(targetNum) // display the randomised number in the console
+// the above will generate a random number that the user has to guess between 0 and whatever high number value they've iunput
+let guess = parseInt(prompt("Enter your first guess!"));
+let attempts = 1; // number of guesses start at first 1
+// the above message will prompt user to enter their first guess!
+while (guess !== targetNum) {
+    attempts++; // will tally each time a guess is made
+    if (guess > targetNum) {
+        guess = parseInt(prompt("Too high! try again!"))
+    } else {
+        guess = parseInt(prompt("Too low! Try again!"))
+    }
+}
+// the above while loop will take the users guess and if it is not !== equal to the random number then the loop continues, if the users number is too high they will see a message displaying that and the same if the input is too low
+alert(`You got it! ${attempts} guesses`); //dont forget the backtick ``
+// once the user has guessed the number correctly the loop will end and they will see the above message with the number of guesses
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+// Angela Course
+/////////////////////////////////////////////////////////////
+
+
+
+// with variable number they can be added to and subracted from
+var luckyNum = 5; // this number can be added to or subtracted from
+luckyNum++; // the luckyNum value here would be = 6 as its been incremented!
+luckyNum--; // the value is now 5 again as it's been decremented
+
+const luckyNum = 5; // this value cannot be altered as it's a constant
+
+let luckyNum = 5; // this has somewhat replaced var let and const should be used in place of var
+
+//var can store values
+var myName = ("ash") //the variable myName now has a value of ash
+
+
+
+
+
+//alert basic message
+alert("hello");
+
+
+
+//alert with basic maths
+alert(2 + 3);
+alert(2 * 2);
+alert(4 - 1);
+alert("2");
+alert(5 / 5);
+
+
+
+//type of, tells you what input type has been entered
+typeof (123); //output number
+typeof ("ash"); //output string "text in quotes is a string"
+typeof (true); //boolean false or true statements
+
+
+
+//prompt with basic input
+prompt("what's your name?"); //will display a pop up with a text put for user entry
+
+
+
+//var is variables this is only used to create a variable with a value
+var myName = "string"; // create a variable myName with a string!! type myName will display string
+
+
+
+// change a variable this is used to change the value of a variable
+myName = "John"; // the variable has now changed to the new string John
+
+
+
+// + this will add additional things into the () parentheses
+alert("hi " + myName); // this will display an alert with the string hi John in spaces are important!
+
+
+
+// save information captured from a prompt
+var yourName = prompt("What is your name?"); // yourName has a value of whatever the user entered in the prompt
+
+
+
+//create an alert with a saved variable and message
+alert("welcome to our website " + yourName + " we hope you have a great time!"); // this will create a message with the variable value from yourName inbetween the two strings
+
+
+
+// combining multiple strings and varible value
+alert("my name is " + myName + ", just wanted to say hi " + yourName + ", and welcome!");
+
+
+
+// change the content of 2 variables by using a third container
+var a = "3";
+var b = "8";
+
+var c = a; // new var c = 3 // c takes a's contents
+a = b; // a = 8 // a can now hold b's contents
+b = c; // b = 3 b can now hold c's contents that it took form a
+
+console.log("a is " + a);
+console.log("b is " + b); // the value have now switched their variables
+
+
+
+// Concatenation - this refers to the way a line of code is made up of example a string
+
+
+
+// Counting characters
+var name = ("Ash");
+name.length; // this will output in the console how many characters are in the variable name
+var charCount = prompt("how many characters are in the text the user inputs?"); //this will read how many characters have been written in the prompt box
+alert("you have used " + charCount.length + " characters"); //display an alert saying how many characters were in the written prompt
+
+alert("you have " + (140 - charCount.length) + " characters left of 140"); // remaining characters
+
+var name = ("ash");
+name.slice(0, 1); // this will display the first character from the name variable a is at position 0 so s is position 1 but the 1 in the code doesn't include the last number written
+
+
+
+// twitter style character counting check how many characters are left in a message cut off the message that goes over a certain number here 140 characters
+var tweet = prompt("write your tweet"); // prompt the user to write something
+var tweetCount = tweet.length; // how manay characters were written in the tweet
+var tweetRemaining = (140 - tweetCount); // 140 - tweet length will display how many characters are left to 140
+var tweetCut = tweet.slice(0, 140); // this will cut anything off past 140 in the alert message
+alert("your tweet - " + tweetCut + " - tweet length: " + tweetCount + " you have " + tweetRemaining + " characters left");
+
+var name = ("ash");
+name.toUpperCase(); // This will make the variable value ash upper case! This would only be temporary!
+name = name.toUpperCase(); // This would alter the value of the variable so the change is permanent!
+
+var name = ("ash");
+name.toLowerCase(); // This will make the variable value ash lower case! This would only be temporary!
+name = name.toLowerCase(); // This would alter the value of the variable so the change is permanent!
+
+
+
+// combining .slice + .toUpperCase + .toLowerCase to reformat someones name incase they input incorrect casing
+var name = prompt("what is your name?")
+nameUC = name.slice(0, 1);
+nameUC = nameUC.toUpperCase();
+nameRemain = name.slice(1, name.length); // Use variable value.length as this is a prompt box and the user can type as much as they want unless it's cut like the tweet
+nameRemain = nameRemain.toLowerCase();
+
+alert("hi " + nameUC + nameRemain + " welcome to the site!");
+
+
+
+// Mathematics - whatever sum you want to be calculated first must have ( Parentheses ) otherwise the * will always be calculated first so 3 + 5 * 10 = 53 where as (3 + 5) * 10 = 80
+// How old is your dog in human years?
+var dogAge = prompt("How old is your dog?");
+var humanAge = (dogAge - 2) * 4 + 21;
+
+alert("your dog is " + humanAge + " in human years!");
+
+
+
+// value if number, put ++ on the end is an incrementing number so it will +1 to the value so 5++ = 6
+var x = prompt("How old is your dog?");
+x++; // when x is checked in the console its value will now be 6!
+
+
+
+// this can also be done in reverse so it's a decrement
+
+x--; // the value in console will be 4!
+
+
+
+// variable value in numbers (calculation)
+//if you have two value x and y you can write x +=y; which would add both of the values together
+var x = 5;
+var y = 6;
+
+var xy = x += y; // this would make xy = 11
+
+var x = 3;
+var y = x++; // In this the Y now just takes the characteristics of the orginal x! It does not equal 5 it equals 4 at the end as the ++ is no added to the y x becomes 4 in this
+y += 1;
+
+
+
+// Function - encapsulates lines of code to be activated by whatever variable value you assign to it
+function launch() { // thist is th beginning of the function capsule (create the function)
+    var name = prompt("what is your name");
+    var myName = ("Ash");
+    alert("Hi there " + name + " hope you enjoy my site " + myName);
+} // you can place code inside the function to allow for one piece of code to set everything off here the value assigned is start
+
+launch(); // this kicks off the function process (call the function)
+
+
+
+// console.log this will log any actions to the console as opposed to running something like an alert
+console.log("hello people");
+
+
+
+// using the parentheses at the end of functions allows you to add a variable
+function getMilk(bottles) {
+    var cost = bottles * 2; // here bottles is the variable 2 so thing "cost is 2 * 2 = 4"
+    console.log(cost); // will display the total in the console
+}
+
+getMilk(2); // the 2 here is relative to bottles which cascades down to the variable below
+
+
+
+// next part
+
+function getMilk(money) { // here the value is 5 money
+    var bottles = 1.5; // this is the cost per bottle
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("buy " + Math.floor(money / bottles) + " bottles of Milk");
+    // Math.floor rounds down to the closest integer so the equation is 5 / 1.5 the Math.floor rounds down to 3
+    console.log("moveLeft");
+    console.log("moveLeft");
+}
+
+getMilk(5); // give the robot 10 dollars each bottle costs 1.5 dollars
+
+
+// continuation of get milk utilising return to display the change from the 5 money
+function getMilk(money) { // here the value is 5 money
+    var bottles = 1.5; // this is the cost per bottle
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("buy " + Math.floor(money / bottles) + " bottles of Milk");
+    // Math.floor rounds down to the closest integer so the equation is 5 / 1.5 the Math.floor rounds down to 3
+    console.log("moveLeft");
+    console.log("moveLeft");
+
+    return money % 1.5;
+
+}
+
+var change = getMilk(5); // give the robot 10 dollars each bottle costs 1.5 dollars
+alert(change); // this takes the whole function and with return at the end this will display the amount of change the user will get back!
+
+
+
+
+// Time left to live calculate
+// how manys days / weeks / months / years left in our lives? if we live till 90
+var age = prompt("how old are you?");
+
+var left = (90 - age);
+
+var days = (left * 365);
+var weeks = (left * 52);
+var months = (left * 12);
+var years = (90 - age);
+
+alert("You are " + age + " if you live to 90 you have: " + days + " days / " + weeks + " weeks / " + months + " months / " + years + " years to live");
